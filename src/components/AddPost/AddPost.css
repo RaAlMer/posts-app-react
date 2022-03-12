@@ -1,6 +1,7 @@
-.container {
+.post_form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 20px;
+    border: 1px solid gray;
+    gap: 15px;
 }
