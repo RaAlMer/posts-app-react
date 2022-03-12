@@ -27,9 +27,9 @@ export function AddPost({ setPostsInsideComponent }) {
     return (
         <form onSubmit={handleSubmit} className="post_form">
             {/* each input need a value(reactive/useState) and onChange event */}
-            <input value={img} onChange={(e) => setImg(e.target.value)} />
-            <input value={title} onChange={(e) => setTitle(e.target.value)} />
-            <input value={description} onChange={(e) => setDescription(e.target.value)} />
+            <input placeholder="Introduce an image link" value={img} onChange={(e) => setImg(e.target.value)} />
+            <input placeholder="Introduce a title" value={title} onChange={(e) => setTitle(e.target.value)} />
+            <input placeholder="Introduce a description" value={description} onChange={(e) => setDescription(e.target.value)} />
             {/* submit button only active if all inputs are filled */}
             <button disabled={!(img && title && description)} type="submit">Create post</button>
         </form>
