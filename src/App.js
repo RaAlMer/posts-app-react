@@ -23,7 +23,7 @@ function App() {
   const [posts, setPosts] = useState(posts_db);
   return (
     <div className='container'>
-      {/* always make the difference between the name inside the component and the */}
+      {/* always make the difference between the name inside the component the variable name that you are passing */}
       <AddPost setPostsInsideComponent={setPosts} />
       {/* list of posts using the map operation */}
       {posts.map((post) => {
